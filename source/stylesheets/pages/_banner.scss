@@ -1,0 +1,25 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  //padding: 150px 0;
+  height: 100vh;
+}
+
+.banner h1 {
+  margin: 0;
+  font-family: 'Rawengulk';
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 48px;
+  font-weight: Regular;
+}
+
+.banner p {
+  font-family: 'Flamenco';
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  padding-top: 150px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
