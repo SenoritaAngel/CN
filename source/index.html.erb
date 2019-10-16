@@ -57,17 +57,21 @@ title: Carole Nogueira Comportementaliste Équin
 </div>
 
 <div class="gallery">
-  <div class="mosaic">
-        <img src="images/animal-blur-horse-257573.jpg" class="card-photo" alt="horse blur">
-        <img src="images/animals-daylight-domestic-1808308.jpg" class="card-photo" alt="horse daylight">
-        <img src="images/animal-blur-horse-257573.jpg" class="card-photo" alt="horse blur">
-        <img src="images/animals-daylight-domestic-1808308.jpg" class="card-photo" alt="horse daylight">
-        <img src="images/animal-blur-horse-257573.jpg" class="card-photo" alt="horse blur">
-        <img src="images/animals-daylight-domestic-1808308.jpg" class="card-photo" alt="horse daylight">
-        <img src="images/animal-blur-horse-257573.jpg" class="card-photo" alt="horse blur">
-        <img src="images/animals-daylight-domestic-1808308.jpg" class="card-photo" alt="horse daylight">
-        <img src="images/animal-blur-horse-257573.jpg" class="card-photo" alt="horse blur">
-        <img src="images/animals-daylight-domestic-1808308.jpg" class="card-photo" alt="horse daylight">
+  <div class="views">
+      <img src="images/animal-blur-horse-257573.jpg" class="view" alt="horse blur">
+      <img src="images/animals-daylight-domestic-1808308.jpg" class="view" alt="horse daylight">
+      <img src="images/animal-blur-horse-257573.jpg" class="view" alt="horse blur">
+      <img src="images/animals-daylight-domestic-1808308.jpg" class="view" alt="horse daylight">
+      <img src="images/animal-blur-horse-257573.jpg" class="view" alt="horse blur">
+      <img src="images/animals-daylight-domestic-1808308.jpg" class="view" alt="horse daylight">
+      <img src="images/animal-blur-horse-257573.jpg" class="view" alt="horse blur">
+      <img src="images/animals-daylight-domestic-1808308.jpg" class="view" alt="horse daylight">
+      <img src="images/animal-blur-horse-257573.jpg" class="view" alt="horse blur">
+      <img src="images/animals-daylight-domestic-1808308.jpg" class="view" alt="horse daylight">
+  </div>
+
+  <div id="gallery-image" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(images/adorable-animal-beautiful-614521.jpg);">
+        gallery
   </div>
 </div>
 
@@ -116,40 +120,51 @@ title: Carole Nogueira Comportementaliste Équin
 
 </div>
 
-<form action="#" class="border p-3 rounded">
-  <h2>Laissez-moi un message</h2>
+<div class="container">
+  <div class="row">
+      <div class="col-12 col-lg-6">
+        <form action="#" class="border p-3 rounded">
+          <h2>Laissez-moi un message</h2>
 
-  <div class="form-group">
-    <label for="Firstname">First name</label>
-    <input class="form-control" type="text" placeholder="First name" id="firstname">
-  </div>
+          <div class="form-group">
+            <label for="Firstname">First name</label>
+            <input class="form-control" type="text" placeholder="First name" id="firstname">
+          </div>
 
-  <div class="form-group">
-    <label for="Lastname">Last name</label>
-    <input class="form-control" type="text" placeholder="Last name" id="lastname">
-  </div>
+          <div class="form-group">
+            <label for="Lastname">Last name</label>
+            <input class="form-control" type="text" placeholder="Last name" id="lastname">
+          </div>
 
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
 
-  <div class="form-group">
-    <label for="textarea">Write your message</label>
-    <textarea class="form-control" type="text"  placeholder="Your message here" id="textarea" rows="3"></textarea>
-  </div>
+          <div class="form-group">
+            <label for="textarea">Write your message</label>
+            <textarea class="form-control" type="text"  placeholder="Your message here" id="textarea" rows="3"></textarea>
+          </div>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
 
-</form>
+        </form>
+      </div>
+      <div class="col-12 col-lg-4">
+        <img id="map-container" src="images/map_erromardie.png" alt="localisation">
+      </div>
+    </div>
+</div>
 
 <div id="home">
-  <p><strong>Savoir faire une communication animale </strong>Poser les bonnes questions et emmener la personne à être à l’écoute des solutions.</p>
-  <img src="images/cn_white_logo.png" alt="logo Comportementaliste équin" width="200px">
+  <img src="images/cn_605143_logo.png" alt="logo Comportementaliste équin" width="400px">
   <h1>COMPORTEMENTALISTE ÉQUIN</h1>
+  <p><strong>Savoir faire une communication animale </strong>Poser les bonnes questions et emmener la personne à être à l’écoute des solutions.</p>
   <a class="btn btn-flat" href="#">
     <%= link_to "DÉCOUVREZ", "about.html" %>
   </a>
+
+
 </div>
 
