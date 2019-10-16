@@ -1,0 +1,17 @@
+.contact {
+  height: 100vh;
+  //overflow: hidden;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+}
+
+#map-container {
+  max-height: 50vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}

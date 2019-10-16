@@ -1,13 +1,16 @@
 #home {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
   h1 {
-    margin: 0 50px 50px 50px;
+    font-family: 'Rawengulk';
+    color: rgba(60,51,43,0.7);
+    margin-top: 1.5em;
   }
   p {
-    margin-top: 1.5em;
+    margin-top: 1em;
   }
 }
