@@ -1,7 +1,4 @@
 .views {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
@@ -9,7 +6,7 @@
 
 @media(max-width: 992px) {
   .views {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
