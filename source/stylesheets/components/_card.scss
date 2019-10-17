@@ -1,12 +1,19 @@
-.card-about {
+.about {
   overflow: hidden;
   height: 100vh;
   background: white;
-  //box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  //background: gray;
   display: flex;
   justify-content: center;
   align-items: center;
-  h1, h2, p {
+}
+
+.about-container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1, h2, h3, p {
   font-family: 'Rawengulk';
   }
   h1 {
@@ -15,9 +22,17 @@
   //opacity: .7;
   letter-spacing: 7px;
   text-align: center;
-  margin-top: -2rem;
+  margin: 0rem;
   }
   h2 {
+  font-weight: lighter;
+  font-size: 74px;
+  letter-spacing: 7px;
+  text-align: center;
+  margin-top: -1.5rem;
+  margin-bottom: 0;
+  }
+  h3 {
   font-weight: regular;
   font-size: 24px;
   letter-spacing: 7px;
@@ -35,32 +50,30 @@
   }
 }
 
-#card-about-image {
+#about-image {
+  overflow: hidden;
   background-size: cover;
   background-position: center;
-  overflow: hidden;
   //background-position: 50% 50%;
-  min-height: 1000px;
   height: 100vh;
-  min-width: 40%;
+  min-height: 73rem;
+  min-width: 38%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 0;
-  //margin-top: 20px;
   font-family: 'Petit Formal Script';
-  //font-weight: bold;
   font-size: 88px;
   color: rgba(250,250,250,0.7);
-  //opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   letter-spacing: 1px;
 }
 
-.card-about .cards {
-  //padding: 40px;
+.cards {
+  padding-left: 4%;
+  padding-right: 4%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  margin: 0 5rem;
 }
