@@ -1,17 +1,71 @@
 .contact {
+  overflow: hidden;
   height: 100vh;
   //overflow: hidden;
   display:flex;
+  //flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: red;
+  background: white;
+  //background: rgba(60,51,43,0.5);
+}
+
+.contact-container {
+  //display:flex;
+  justify-content: center;
+  width: 50rem;
+  h2, h3, p {
+  font-family: 'Rawengulk';
+  font-color: rgba(60,51,43,1);
+  margin: 0;
+  }
+  h2 {
+  font-weight: lighter;
+  font-size: 54px;
+  letter-spacing: 7px;
+  text-align: center;
+  }
+  h3 {
+  font-weight: regular;
+  font-size: 28px;
+  letter-spacing: 7px;
+  text-align: center;
+  opacity: .7;
+  //margin: 0;
+  }
+  p {
+  font-weight: regular;
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.4;
+  opacity: .7;
+  //margin-bottom: 40px;
+  //margin-top: 8px;
+  }
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.form-container {
+  display:flex;
+  justify-content: center;
+}
+
+.border-none {
+  //border-radius: 2px;
+  padding-right: 2rem;
+  flex: 1 0 auto;
+  max-width: 400px;
 }
 
 #map-container {
-  max-height: 50vh;
+  overflow: hidden;
+  max-height: 240px;
   background-size: cover;
   background-position: center;
-  overflow: hidden;
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
