@@ -15,15 +15,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 1.5rem;
 }
 
 .banner-container h1 {
   margin: 0;
   font-family: 'Rawengulk';
+  // font-weight: bold;
   color: white;
   opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 3.5rem;
+  // text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+  // font-size: 3.5vw;
+  font-size: 4.5rem;
   text-align: center;
   letter-spacing: 7px;
 }
@@ -38,7 +41,8 @@
 }
 
 .banner-container img {
-  height: 45rem;
+  height: 45.5rem;
+  //height: 50vw;
   opacity: .7;
   padding-bottom: 3rem;
 }
@@ -49,18 +53,19 @@
    padding-bottom: 2rem;
  }
  .banner-container h1 {
-   font-size: 3.1rem;
-   letter-spacing: 5px;
+   font-size: 4rem;
+   letter-spacing: 7px;
+   font-weight: bold;
  }
 }
 
 @media(max-width: 992px) {
  .banner-container img {
-   height: 39rem;
+   height: 37rem;
    padding-bottom: 2rem;
  }
  .banner-container h1 {
-   font-size: 3.1rem;
+   font-size: 3.5rem;
    letter-spacing: 5px;
  }
 }
@@ -70,12 +75,12 @@
   //padding-top: 10%;
  }
  .banner-container img {
-   height: 37.5rem;
+   height: 36rem;
    padding-bottom: 1.5rem;
  }
  .banner-container h1 {
-   font-size: 2.5rem;
-   letter-spacing: 3px;
+   font-size: 4rem;
+   letter-spacing: 5px;
  }
 }
 
@@ -84,12 +89,27 @@
   padding-top: 15%;
  }
  .banner-container img {
-   height: 23.5rem;
+   height: 28.5rem;
    padding-bottom: 1.5rem;
  }
  .banner-container h1 {
-   font-size: 1.7rem;
-   font-weight: bolder;
+   font-size: 2.5rem;
+   // font-weight: bold;
+   letter-spacing: 2px;
+ }
+}
+
+@media(max-width: 414px) {
+ .banner-container {
+  padding-top: 15%;
+ }
+ .banner-container img {
+   height: 20.5rem;
+   padding-bottom: 1.5rem;
+ }
+ .banner-container h1 {
+   font-size: 3.5rem;
+   // font-weight: bold;
    letter-spacing: 2px;
  }
 }
