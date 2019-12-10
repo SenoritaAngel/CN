@@ -22,17 +22,19 @@
   max-width: 70%;
   margin-bottom: 30px;
   h2, p {
-  font-family: 'Rawengulk';
+  // font-family: 'Rawengulk';
   color: white;
   margin: 0;
   }
   h2 {
-  font-weight: lighter;
+  // font-weight: light;
+  font-family: 'rawengulklight';
   font-size: 74px;
   letter-spacing: 7px;
   text-align: left;
   }
   p {
+  font-family: 'rawengulkregular';
   font-size: 24px;
   letter-spacing: 4px;
   text-align: left;

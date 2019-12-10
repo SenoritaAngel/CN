@@ -20,8 +20,8 @@
 
 .banner-container h1 {
   margin: 0;
-  font-family: 'Rawengulk';
-  // font-weight: bold;
+  // font-family: $my-font;
+  font-family: 'rawengulkdemibold';
   color: white;
   opacity: .7;
   // text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
@@ -32,7 +32,7 @@
 }
 
 .banner-container p {
-  font-family: 'Rawengulk';
+  font-family: $my-font;
   font-weight: bold;
   font-size: 20px;
   color: white;
@@ -55,7 +55,7 @@
  .banner-container h1 {
    font-size: 4rem;
    letter-spacing: 7px;
-   font-weight: bold;
+   // font-weight: bold;
  }
 }
 
