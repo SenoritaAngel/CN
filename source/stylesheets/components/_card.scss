@@ -51,12 +51,12 @@
 }
 
 #about-image {
-  overflow: hidden;
+  // overflow: hidden;
   background-size: cover;
-  background-position: center;
-  //background-position: 50% 50%;
+  // background-position: center;
+  background-position: 15% 50%;
   height: 100vh;
-  min-height: 73rem;
+  min-height: 75rem;
   min-width: 38%;
   display: flex;
   justify-content: space-around;
