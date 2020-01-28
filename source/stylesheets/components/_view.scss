@@ -1,5 +1,6 @@
-.views-image-container {
-  //overflow: hidden;
+.advice-container {
+  // overflow: hidden;
+  // height: 100vh;
   //display: flex;
   //flex-direction: row-reverse;
   background: white;
@@ -10,9 +11,16 @@
 .views {
   //display: flex;
   //flex-wrap: wrap;
-  //justify-content: center;
-  align-self: center;
-  margin: 40px 13px;
+  justify-content: center;
+  // align-self: center;
+  margin: 40px 15px;
+}
+.views :last-child {
+  //display: flex;
+  //flex-wrap: wrap;
+  justify-content: flex-start;
+  // align-self: center;
+  // margin: 40px 15px;
 }
 
 .view {
@@ -31,13 +39,13 @@
 
 .view:hover {opacity: 0.7;}
 
-#gallery-image {
+#advice-image {
   overflow: hidden;
   background-size: cover;
-  background-position: center;
-  //background-position: 50% 50%;
+  // background-position: center;
+  background-position: 22% 50%;
   height: 100vh;
-  //min-height: 73rem;
+  // min-height: 75rem;
   min-width: 38%;
   position: sticky;
   top: 0px;
