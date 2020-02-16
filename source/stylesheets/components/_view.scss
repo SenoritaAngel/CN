@@ -12,27 +12,43 @@
   //flex-wrap: wrap;
   // flex-grow: 1;
   justify-content: center;
-  // align-items: ;
   // margin-top: 0px;
   // margin-bottom: 0px;
 }
 
-.thumbnailcontainer {
+.thumbnail-container {
   overflow: hidden;
   position: relative;
-  max-width: 40%;
+  // max-width: 40%;
+  width: 190px;
+  height: 190px;
   text-align: center;
   margin: 25px 25px;
+  border-radius: 4px;
+  // box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.thumbnail-container img {
+  min-width: 190px;
+  height: 190px;
+  position: relative;
 }
 
 .thumbnail {
+  overflow: hidden;
   display: block;
-  width: 100%;
-  max-height: 180px;
-  // height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  // width: 100%;
+  max-height: auto;
+  // width: 400px;
+  // height: 266px;
   // transition: .5s ease;
   // backface-visibility: hidden;
-  // line-height: 0;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .overlay {
@@ -50,12 +66,24 @@
   background-color: rgba(0,0,0,0.6);
 }
 
-.thumbnailcontainer:hover .thumbnail {
-  transform: scale(1.5); /* Standard syntax */
-  transition: .3s ease;
+.thumbnail-container:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: .5s ease;
 }
 
-.thumbnailcontainer:hover .overlay {
+.thumbnail-container:hover .thumbnail {
+  transform: scale(1.5); /* Standard syntax */
+  transition: .5s ease;
+  // transform: matrix(1, 0, 0, 1, -100%, -100%);
+  position: absolute;
+  left: -40%;
+  top: -10%;
+  // -webkit-transform: translate(-50%,-50%);
+  // -ms-transform: translate(-50%,-50%);
+  // transform: translate(-50%,-50%);
+}
+
+.thumbnail-container:hover .overlay {
   opacity: 1;
 }
 
@@ -63,6 +91,7 @@
   color: white;
   font-family: 'Rawengulkdemibold';
   font-size: 24px;
+  line-height: 1.2;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -91,3 +120,11 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   letter-spacing: 1px;
 }
+
+//tablet and above devices
+ /* @media (min-width: 768px) {
+  .thumbnails{
+    width: 60%;
+    margin: auto;
+  }
+} */
