@@ -48,6 +48,10 @@
   margin-bottom: 40px;
   margin-top: 8px;
   }
+
+  &.scrollable {
+        overflow-y: scroll;
+    }
 }
 
 #about-image {
