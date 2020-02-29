@@ -1,0 +1,113 @@
+.redfun {
+  height: 100vh;
+  background-color: rgba(98,17,11,0.9); /* Black w/ opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.cardfun-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // background: white;
+  width: 80%;
+  max-width: 400px;
+  // border-radius: 12px;
+  // -webkit-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.6);
+  // -moz-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.6);
+  // box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.6);
+}
+
+/* Hide the slides by default */
+.mySpace {
+  // position: relative;
+  // display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // flex: 1 0 100%;
+  width: 80%;
+  // height: 100%;
+  // overflow: hidden;
+  transition: all 300ms ease-out;
+  // vertical-align: top;
+  box-sizing: border-box;
+  white-space: normal;
+  background: white;
+  border-radius: 6px;
+  // -webkit-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.6);
+  // -moz-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.6);
+  // box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.6);
+  }
+
+    .figcaption {
+      // align-self: flex-end;
+      // padding: 20px 20px 0 20px;
+      margin: 15% 10% 5% 10%;
+      // flex: 1;
+      // width: 25%;
+      min-width: 150px;
+
+      h3 {
+        font-family: 'rawengulkbold';
+        font-size: 32px;
+        line-height: 1;
+        // letter-spacing: 3px;
+        text-align: left;
+        margin: 0;
+        padding-bottom: 15px;
+      }
+
+      p {
+        font-family: $my-font;
+        font-size: 18px;
+        text-align: left;
+        line-height: 1.2;
+        opacity: .7;
+        margin: 0;
+      }
+    }
+
+.view {
+  // float: left;
+  display: flex;
+  align-items: center;
+  position: relative;
+  // left: 30px;
+  top: 25px;
+  // height: 470px;
+  // width: 500px;
+  min-height: 30vh;
+  width: 90vw;
+  // flex: 3;
+  max-width: 500px;
+  border-radius: 6px;
+  -webkit-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.6);
+  -moz-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.6);
+  box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.6);
+  overflow: hidden;
+}
+
+/*object-fit: cover;*/
+/*object-position: center;*/
+.image {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  // height: 110%;
+  // width: 100%;
+  object-fit: cover;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .cardfun-container {
+    width: 90%;
+  }
+}
