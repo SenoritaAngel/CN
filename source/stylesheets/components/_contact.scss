@@ -1,6 +1,7 @@
 .contact {
   overflow: hidden;
   background-size: 170%;
+  background-repeat: no-repeat;
   background-position: 54% 44%;
   background-attachment: fixed;
   height: 100vh;
@@ -87,11 +88,12 @@
 }
 
 .form-text-mention {
-  color: $brown;
+  color: white;
   font-size: 12px;
 }
 
-.form-control-guest:focus{
+.form-control-guest:focus,
+.form-control-message:focus {
   background: #fff;
   box-shadow: 0;
   border: 3px solid #3498db;
@@ -101,13 +103,11 @@
 }
 
 .focused{
-  color:#30aed6;
+  color: black;
   border:#30aed6 solid 3px;
 }
 
 .info-container {
-  // height: 298px;
-  // width: 220px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -115,10 +115,6 @@
   flex: 2 0 auto;
   max-width: 325px;
   //justify-content: space-between;
-  // position: absolute;
-  // float: right;
-  // right: 50%;
-  // margin-right: -200px;
   i {
   font-family: 'Fontawesome';
   content: "f3c5";
