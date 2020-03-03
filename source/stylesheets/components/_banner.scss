@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  //align-items: center;
 }
 
 .banner-container {
@@ -24,8 +23,6 @@
   font-family: 'rawengulkdemibold';
   color: white;
   opacity: .7;
-  // text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
-  // font-size: 3.5vw;
   font-size: 4.5rem;
   text-align: center;
   letter-spacing: 7px;
@@ -42,7 +39,6 @@
 
 .banner-container img {
   height: 45.5rem;
-  //height: 50vw;
   opacity: .7;
   padding-bottom: 3rem;
 }
@@ -55,7 +51,6 @@
  .banner-container h1 {
    font-size: 4rem;
    letter-spacing: 7px;
-   // font-weight: bold;
  }
 }
 
@@ -94,7 +89,6 @@
  }
  .banner-container h1 {
    font-size: 2.5rem;
-   // font-weight: bold;
    letter-spacing: 2px;
  }
 }
@@ -109,7 +103,6 @@
  }
  .banner-container h1 {
    font-size: 3.5rem;
-   // font-weight: bold;
    letter-spacing: 2px;
  }
 }
