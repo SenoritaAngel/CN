@@ -1,63 +1,54 @@
 .contact {
   overflow: hidden;
   background-size: 170%;
-  background-position: 54% 47%;
+  background-position: 54% 44%;
   background-attachment: fixed;
   height: 100vh;
-  //display: flex;
-  //flex-direction: column;
-  //justify-content: center;
+  display: flex;
 }
 
 .contact-container {
-  width: 100%;
-  //margin: 10%;
-  margin-top: 8%;
-  margin-left: 10%;
-  float: left;
-  //padding-top: 8%;
+  display: flex;
+  flex-direction: column;
+  margin: auto 5%;
 }
 
 .contact-title {
-  max-width: 70%;
-  margin-bottom: 30px;
+  max-width: 75%;
+  margin-bottom: 3%;
   h2, p {
   color: white;
   margin: 0;
+  text-align: left;
   }
   h2 {
-  // font-weight: light;
   font-family: 'rawengulklight';
-  font-size: 74px;
-  letter-spacing: 7px;
-  text-align: left;
+  font-size: 5.5rem; /* 74px */
+  letter-spacing: 0.4rem;
   }
   p {
   font-family: 'rawengulkregular';
-  font-size: 24px;
+  font-size: 1.5rem; /* 24px */
   letter-spacing: 4px;
-  text-align: left;
   line-height: 1.3;
   }
 }
 
 .form-info-container {
-  //max-width: 65%;
-  //display: flex;
-  //justify-content: space-between;
-  width: 450px;
+  max-width: 75%;
+  display: flex;
+  // flex-direction: row;
+  // justify-content: space-between;
+  flex-wrap: wrap;
   //background-color:rgba(72,72,72,0.4);
-  //padding-left:35px;
-  padding-right:35px;
-  //padding-top:25px;
-  //padding-bottom:25px;
-  //float: left;
-  //left: 50%;
-  position: absolute;
+  // padding-right: 10%;
 }
 
 .form {
-  width: 100%;
+  // width: 45%;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  flex: 0 0 50%;
 }
 
 .form-control-guest {
@@ -115,15 +106,19 @@
 }
 
 .info-container {
-  height: 298px;
-  width: 220px;
+  // height: 298px;
+  // width: 220px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  // max-width: 325px;
+  flex: 2 0 auto;
+  max-width: 325px;
   //justify-content: space-between;
-  position: absolute;
-  float: right;
-  right: 50%;
-  margin-right: -200px;
+  // position: absolute;
+  // float: right;
+  // right: 50%;
+  // margin-right: -200px;
   i {
   font-family: 'Fontawesome';
   content: "f3c5";
@@ -140,67 +135,115 @@
 }
 
 .info-map {
-  //max-width: 200px;
+  max-width: 80%;
+  // padding-right: 7%;
+  padding-bottom: 8%;
 }
 
 #map {
   overflow: hidden;
-  //max-height: 220px;
-  margin-top: 5%;
+  height: 50%;
+  // margin-top: 5%;
   background-size: cover;
   background-position: center;
   border-radius: 4px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 15px rgba(65, 72, 35, 0.8);
+  width: 75%;
 }
 
-@media(max-width: 768px) {
- .contact {
-  background-size: 310%;
-  background-position: 60% 70%;
-  }
- .contact-title {
-  max-width: 76%;
-    h2 {
-    font-size: 54px;
-    letter-spacing: 5px;
+@media (max-width: 768px) {
+    .contact {
+      background-size: 360%;
+      background-position: 58% 50%;
     }
-    p {
-    font-size: 18px;
-    letter-spacing: 2px;
+
+    .contact-title {
+      max-width: 100%;
+      h2 {
+        // max-width: 100%;
+        font-size: 4.5rem;
+        letter-spacing: 0.4rem;
+      }
+      p {
+        max-width: 90%;
+        font-size: 1.2rem;
+        letter-spacing: 0.1rem;
+      }
     }
-  }
-  .form-info-container {
-  width: 450px;
-  padding-right:35px;
-  }
-  .info-container {
-  margin-top: 4%;
-  height: 290px;
-  width: 220px;
-  //display: flex;
-  //flex-direction: column;
-  left: 10%;
-  }
-  #map {
-  margin-top: 5%;
-  }
+
+    .form-info-container {
+      max-width: 100%;
+      // display: flex;
+      // flex-direction: column;
+      // flex-wrap: wrap;
+    }
+
+    .form {
+      // margin-bottom: 5%;
+      margin-right: 0;
+      flex: 0 0 55%;
+    }
+
+    .info-container {
+      // display: flex;
+      // flex-direction: row-reverse;
+      // align-items: flex-end;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .info-map {
+      max-width: 80%;
+      padding-right: 0;
+      padding-bottom: 0;
+      margin-bottom: 3%;
+    }
+    #map {
+      height: 140px; /*img en paysage*/
+      width: 54%;
+    }
 }
 
-@media(max-width: 576px) {
- .contact {
-  background-size: 450%;
-  background-position: 55% 80%;
-  }
- .contact-title {
-  max-width: 100%;
-  //margin-bottom: 30px;
-  }
- .form-info-container {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  }
-  .info-container {
-  margin-top: 8%;
-  }
+ @media (max-width: 576px) {
+    .contact {
+      background-size: 450%;
+      background-position: 55% 50%;
+    }
+    .contact-title {
+      max-width: 100%;
+      text-align: justify;
+        h2 {
+          font-size: 2.9rem;
+          letter-spacing: 0.1rem;
+        }
+        p {
+        font-size: 1.2rem;
+        letter-spacing: 0.1rem;
+        line-height: 1.2;
+        }
+    }
+
+    .form {
+      // margin-bottom: 5%;
+      // margin-right: 7%;
+      flex: 1 0 auto;
+    }
+
+    .form-info-container {
+      max-width: 100%;
+      // display: flex;
+      // flex-direction: column;
+      padding-right: 0;
+    }
+
+    .info-container {
+      max-width: 100%;
+      margin-top: 5%;
+      flex: 1 0 auto;
+    }
+
+    #map {
+      height: auto;
+    }
 }
+
