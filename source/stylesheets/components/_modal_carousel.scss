@@ -39,13 +39,13 @@
   white-space: normal;
 
 
-    figure {
+   /* figure {
         display: flex;
         justify-content: space-between;
         margin: 16px 40px;
         // margin: 0;
     }
-   /*
+
     div {
         // @include aspect-ratio(3, 2);
         width: 100%;
@@ -133,7 +133,7 @@
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, .figcaption {
+.modal-content, .mySlides {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
@@ -203,10 +203,10 @@
   color: rgba(0, 0, 0, 1);
   font-family: 'Poppins';
   font-weight: 200;
-  font-size: 12px;
+  font-size: 16px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  top: 1%;
   // right: 0;
 }
 
