@@ -13,8 +13,11 @@
 
 .modal-cards {
   height: 100vh;
-  position: relative;
-  top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // position: relative;
+  // top: 3.5rem;
   // overflow-x: auto;
   // -webkit-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.6);
   // -moz-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.6);
