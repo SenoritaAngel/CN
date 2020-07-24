@@ -23,7 +23,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var slides = document.getElementsByClassName("Slides");
   //var dots = document.getElementsByClassName("demo");
   //var captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
@@ -34,7 +34,7 @@ function showSlides(n) {
   /*for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }*/
-  slides[slideIndex-1].style.display = "block";
-  //dots[slideIndex-1].className += " active";
-  //captionText.innerHTML = dots[slideIndex-1].alt;
+  slides[slideIndex-1].style.display = "flex";
+  // dots[slideIndex-1].className += " active";
+  // captionText.innerHTML = dots[slideIndex-1].alt;
 }
