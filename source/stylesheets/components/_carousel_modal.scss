@@ -59,7 +59,7 @@ figure {
   position: relative;
   display: flex;
   margin-top: 3rem;
-  min-height: 30vh;
+  min-height: 33vh;
   width: 90vw;
   max-width: 500px;
   border-radius: 6px;
@@ -168,28 +168,4 @@ figure {
   // padding: 8px 12px;
   position: absolute;
   top: 1rem;
-}
-
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 400px){
-  .cardfun-container {
-    width: 100%;
-    margin-top: 13%;
-    margin-left: 0;
-  }
-  /* The Close Button */
-  .close {
-    position: absolute;
-    top: 5px;
-    right: 15px;
-  }
-  /* Hide the slides by default */
-  .Slides {
-    max-width: 82%;
-  }
-
-  .view {
-    margin-top: 15%;
-  }
 }
