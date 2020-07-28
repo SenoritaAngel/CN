@@ -24,7 +24,7 @@
   // box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.6);
 }
 
-figure {
+.modal-cards figure {
   // position: relative;
   // display: none;
   display: flex;
@@ -59,9 +59,9 @@ figure {
   position: relative;
   display: flex;
   margin-top: 3rem;
-  min-height: 33vh;
+  min-height: 40vh;
   width: 90vw;
-  max-width: 500px;
+  max-width: 600px;
   border-radius: 6px;
   -webkit-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.6);
   -moz-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.6);
@@ -168,4 +168,43 @@ figure {
   // padding: 8px 12px;
   position: absolute;
   top: 1rem;
+}
+
+//tablet devices
+@media (max-width: 768px) {
+.modal-cards {
+  justify-content: flex-start;
+  // position: relative;
+  margin-top: 10%;
+  // overflow-x: auto;
+  // -webkit-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.6);
+  // -moz-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.6);
+  // box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.6);
+}
+
+.view {
+  // float: left;
+  position: relative;
+  display: flex;
+  margin-top: 3rem;
+  min-height: 33vh;
+  width: 90vw;
+  max-width: 560px;
+  border-radius: 6px;
+  -webkit-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.6);
+  -moz-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.6);
+  box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.6);
+  overflow: hidden;
+}
+
+/* Next & previous buttons */
+  .arrow-prev {
+  left: 80px;
+  transform: rotate(225deg);
+}
+
+.arrow-next {
+  right: 80px;
+  transform: rotate(45deg);
+}
 }
