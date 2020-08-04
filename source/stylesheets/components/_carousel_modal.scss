@@ -13,15 +13,18 @@
 
 .modal-cards {
   height: 100vh;
-  position: relative;
-  top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // position: relative;
+  // top: 3.5rem;
   // overflow-x: auto;
   // -webkit-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.6);
   // -moz-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.6);
   // box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.6);
 }
 
-figure {
+.modal-cards figure {
   // position: relative;
   // display: none;
   display: flex;
@@ -56,9 +59,9 @@ figure {
   position: relative;
   display: flex;
   margin-top: 3rem;
-  min-height: 30vh;
+  min-height: 36vh;
   width: 90vw;
-  max-width: 500px;
+  max-width: 600px;
   border-radius: 6px;
   -webkit-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.6);
   -moz-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.6);
@@ -167,26 +170,41 @@ figure {
   top: 1rem;
 }
 
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 400px){
-  .cardfun-container {
-    width: 100%;
-    margin-top: 13%;
-    margin-left: 0;
-  }
-  /* The Close Button */
-  .close {
-    position: absolute;
-    top: 5px;
-    right: 15px;
-  }
-  /* Hide the slides by default */
-  .Slides {
-    max-width: 82%;
+//tablet devices
+@media only screen and (max-width: 768px) {
+  .modal-cards {
+    justify-content: flex-start;
+    // position: relative;
+    margin-top: 10%;
+    // overflow-x: auto;
+    // -webkit-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.6);
+    // -moz-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.6);
+    // box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.6);
   }
 
   .view {
-    margin-top: 15%;
+    // float: left;
+    position: relative;
+    display: flex;
+    margin-top: 3rem;
+    min-height: 33vh;
+    width: 90vw;
+    max-width: 560px;
+    border-radius: 6px;
+    -webkit-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.6);
+    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.6);
+    overflow: hidden;
+  }
+
+  /* Next & previous buttons */
+  .arrow-prev {
+    left: 80px;
+    transform: rotate(225deg);
+  }
+
+  .arrow-next {
+    right: 80px;
+    transform: rotate(45deg);
   }
 }
