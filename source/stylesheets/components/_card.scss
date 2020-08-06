@@ -10,8 +10,8 @@
 
 .about-container {
   // overflow: hidden;
-  overflow: auto;
-  height: 100vh;
+  // overflow: auto;
+  // height: 100vh;
   background: white;
   display: flex;
   justify-content: center;
@@ -44,6 +44,7 @@
 .cards {
   // padding-left: 4%;
   // padding-right: 4%;
+  // max-width: 900px;
   max-width: 900px;
   display: flex;
   flex-direction: column;
@@ -61,31 +62,28 @@
 
   h1 {
   // font-weight: 'rawengulklight';
-  font-size: 74px;
-  //opacity: .7;
-  letter-spacing: 7px;
+  font-size: 80px;
+  opacity: .5;
+  letter-spacing: 8px;
   text-align: center;
-  line-height: 0.9;
+  line-height: 0.8;
   margin: 0rem;
   }
 
   h2 {
-  // font-weight: 'rawengulklight';
   font-size: 52px;
   letter-spacing: 7px;
   text-align: center;
   line-height: 1.1;
-  // margin-top: -1.5rem;
-  // margin-bottom: 0;
   }
 
   h3 {
   font-family: 'rawengulkregular';
   font-size: 24px;
+  opacity: .7;
   letter-spacing: 7px;
   text-align: center;
   line-height: 1.1;
-  // margin: 0;
   margin-top: 3%;
   margin-bottom: 1%;
   }
@@ -96,8 +94,6 @@
   text-align: justify;
   line-height: 1.4;
   opacity: .7;
-  // margin-bottom: 40px;
-  // margin-top: 8px;
   }
 }
 
@@ -110,22 +106,13 @@
   }
 
   .cards {
-    //display: flex;
-    //flex-wrap: wrap;
-    // flex-grow: 1;
-    // justify-content: center;
-    // overflow: scroll;
-    max-width: 100%;
-    margin: 10% 5%;
+    max-width: 90%;
+    margin: 10% 10%;
   }
 
   #about-image {
     z-index: 1;
     overflow: hidden;
-    // overflow: hidden;
-    // background-size: 200%;
-    // background-position: center;
-    // background-position: 20% 84%;
     height: 25vh;
     min-width: 100%;
     position: sticky;
@@ -134,9 +121,55 @@
   }
 }
 
+//smartphone
 @media (max-width: 576px) {
   #about-image {
     height: 15vh;
     font-size: 4rem;
+  }
+
+  .card-about-infos {
+    position: relative;
+    h3, p {
+    font-family: 'rawengulkregular';
+    }
+
+    h1 {
+    font-family: 'rawengulklight';
+    font-size: 68px;
+    letter-spacing: 5px;
+    text-align: center;
+    line-height: 0.8;
+    margin: 0rem;
+    }
+
+    h3 {
+    font-size: 20px;
+    letter-spacing: 7px;
+    text-align: center;
+    line-height: 1.1;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    }
+
+    p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.3;
+    opacity: .7;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .card-about-infos {
+    h1 {
+    font-size: 64px;
+    letter-spacing: 4px;
+    }
+
+    h3 {
+    letter-spacing: 5px;
+    }
   }
 }
