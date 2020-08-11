@@ -350,10 +350,19 @@ title: Carole Nogueira Comportementaliste Équin
   </div>
 </div>
 
-<div class="portfolio-s-screen">
-  <div class="portfolio-s-screen-container d-flex">
+<div class="portfolio-s-screen sneak">
+  <!--Controls-->
+  <div class="controls-top">
+    <a class="btn-chevron" onclick="plusSneaks(-1)"><img src="images/left_chevron_white.png" alt="left chevron white"></a>
+    <a class="btn-chevron" onclick="plusSneaks(1)"><img src="images/right_chevron_white.png" alt="right chevron white"></a>
+  </div>
+  <!--/.Controls-->
+
+  <!--Slides-->
+  <div id="slide-show" class="portfolio-s-screen-container sneak d-flex" role="listbox">
+
       <figure>
-          <div class="slides-s-screen">
+          <div class="slide-s-screen">
             <div class="view-s-screen">
               <img src="images/chevaux-pre-carole-nogueira.jpg" class="image-s-screen" alt="chevaux au pré">
             </div>
@@ -374,7 +383,7 @@ title: Carole Nogueira Comportementaliste Équin
       </figure>
 
         <figure>
-          <div class="slides-s-screen">
+          <div class="slide-s-screen sneak">
               <div class="view-s-screen">
                 <img src="images/bache-buffalo-carole-nogueira.jpg" class="image-s-screen" alt="exercice de la bâche">
               </div>
@@ -390,7 +399,7 @@ title: Carole Nogueira Comportementaliste Équin
         </figure>
 
         <figure>
-          <div class="slides-s-screen">
+          <div class="slide-s-screen">
 
               <div class="view-s-screen">
                 <img src="images/cible-etzan-carole-nogueira.jpg" class="image-s-screen" alt="cheval travaille à la cible">
@@ -408,7 +417,7 @@ title: Carole Nogueira Comportementaliste Équin
         </figure>
 
         <figure>
-          <div class="slides-s-screen">
+          <div class="slide-s-screen">
 
             <div class="view-s-screen">
               <img src="images/toucher-poubelle-carole-nogueira.jpg" class="image-s-screen" alt="cheval touche la poubelle">
@@ -430,7 +439,7 @@ title: Carole Nogueira Comportementaliste Équin
         </figure>
 
         <figure>
-          <div class="slides-s-screen">
+          <div class="slide-s-screen">
 
             <div class="view-s-screen">
               <img src="images/connexion-etzan-carole-nogueira.jpg" class="image-s-screen" alt="buffalo plage">
@@ -449,7 +458,7 @@ title: Carole Nogueira Comportementaliste Équin
         </figure>
 
         <figure>
-          <div class="slides-s-screen">
+          <div class="slide-s-screen">
             <div class="view-s-screen">
             <img src="images/ballon-jeu-chevaux-carole-nogueira.jpg" class="image-s-screen" alt="jeu de ballon avec deux chevaux">
             </div>
@@ -468,7 +477,7 @@ title: Carole Nogueira Comportementaliste Équin
         </figure>
 
         <figure>
-          <div class="slides-s-screen">
+          <div class="slide-s-screen">
 
             <div class="view-s-screen">
             <img src="images/lien-nueva-carole-nogueira.jpg" class="image-s-screen" alt="cheval apprend en douceur">
@@ -486,7 +495,7 @@ title: Carole Nogueira Comportementaliste Équin
         </figure>
 
         <figure>
-          <div class="slides-s-screen">
+          <div class="slide-s-screen">
 
             <div class="view-s-screen">
             <img src="images/monter-a-cru-carole-nogueira.jpg" class="image-s-screen" alt="monter le cheval à cru">
@@ -503,7 +512,7 @@ title: Carole Nogueira Comportementaliste Équin
         </figure>
 
         <figure>
-          <div class="slides-s-screen">
+          <div class="slide-s-screen">
 
             <div class="view-s-screen">
             <img src="images/van-carole-nogueira.jpg" class="image-s-screen" alt="cheval monte dans le van">
@@ -522,7 +531,7 @@ title: Carole Nogueira Comportementaliste Équin
         </figure>
 
         <figure>
-          <div class="slides-s-screen">
+          <div class="slide-s-screen">
 
             <div class="view-s-screen">
             <img src="images/energetique-nueva-carole-nogueira.jpg" class="image-s-screen" alt="cheval monte dans le van">
@@ -540,6 +549,23 @@ title: Carole Nogueira Comportementaliste Équin
           </div>
         </figure>
   </div>
+  <!--Slides-->
+
+  <!-- Indicators -->
+  <ol class="portfolio-indicators">
+    <li data-target="#portfolio-slide" data-slide-to="0" class="dot active" onclick="currentSneak(1)"></li>
+    <li data-target="#portfolio-slide" data-slide-to="1" class="dot" onclick="currentSneak(2)"></li>
+    <li data-target="#portfolio-slide" data-slide-to="2" class="dot" onclick="currentSneak(3)"></li>
+    <li data-target="#portfolio-slide" data-slide-to="3" class="dot" onclick="currentSneak(4)"></li>
+    <li data-target="#portfolio-slide" data-slide-to="4" class="dot" onclick="currentSneak(5)"></li>
+    <li data-target="#portfolio-slide" data-slide-to="5" class="dot" onclick="currentSneak(6)"></li>
+    <li data-target="#portfolio-slide" data-slide-to="6" class="dot" onclick="currentSneak(7)"></li>
+    <li data-target="#portfolio-slide" data-slide-to="7" class="dot" onclick="currentSneak(8)"></li>
+    <li data-target="#portfolio-slide" data-slide-to="6" class="dot" onclick="currentSneak(9)"></li>
+    <li data-target="#portfolio-slide" data-slide-to="7" class="dot" onclick="currentSneak(10)"></li>
+  </ol>
+  <!--/.Indicators-->
+
 </div>
 
 <div class="contact" style="background-image: url(images/horse_pasture_ocean.jpg);">
@@ -580,12 +606,12 @@ title: Carole Nogueira Comportementaliste Équin
 
       <div class="info-container">
         <div class="info-map">
-          <i class="fas fa-map-marker-alt"></i>
+          <i class="icon StreetName"></i>
           <p>Horse StreetName
             64500 Zip Town
           </p>
           <br>
-          <i class="fas fa-mobile-alt"></i>
+          <i class="icon mobile"></i>
           <p>+33 6 60 97 33 55</p>
         </div>
 
