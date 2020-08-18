@@ -147,9 +147,18 @@ title: Carole Nogueira Comportementaliste Équin
       <!-- The Close Button -->
       <span class="close" onclick="closeModal()">&times;</span>
 
+      <!--Controls-->
+        <div class="controls-top">
+          <a class="btn-chevron prev" onclick="plusSlides(-1)"><img src="images/left_chevron_white.png" alt="left chevron white"></a>
+          <a class="btn-chevron next" onclick="plusSlides(1)"><img src="images/right_chevron_white.png" alt="right chevron white"></a>
+        </div>
+      <!--/.Controls-->
+
       <!-- Modal Content (The Image) -->
       <div class="modal-cards">
-        <figure>
+
+
+
             <div class="Slides">
               <div class="view">
                 <img src="images/chevaux-pre-carole-nogueira.jpg" class="image d-block w-100" alt="chevaux au pré">
@@ -168,9 +177,7 @@ title: Carole Nogueira Comportementaliste Équin
               <div class="numbertext">1 / 10</div>
               </div>
             </div>
-        </figure>
 
-        <figure>
           <div class="Slides">
               <div class="view">
                 <img src="images/bache-buffalo-carole-nogueira.jpg" class="image d-block w-100" alt="exercice de la bâche">
@@ -184,9 +191,7 @@ title: Carole Nogueira Comportementaliste Équin
               <div class="numbertext">2 / 10</div>
               </div>
           </div>
-        </figure>
 
-        <figure>
           <div class="Slides">
 
               <div class="view">
@@ -202,11 +207,8 @@ title: Carole Nogueira Comportementaliste Équin
               <div class="numbertext">3 / 10</div>
               </div>
           </div>
-        </figure>
 
-        <figure>
           <div class="Slides">
-
             <div class="view">
               <img src="images/toucher-poubelle-carole-nogueira.jpg" class="image d-block w-100" alt="cheval touche la poubelle">
             </div>
@@ -224,11 +226,8 @@ title: Carole Nogueira Comportementaliste Équin
             <div class="numbertext">4 / 10</div>
             </div>
           </div>
-        </figure>
 
-        <figure>
           <div class="Slides">
-
             <div class="view">
               <img src="images/connexion-etzan-carole-nogueira.jpg" class="image d-block w-100" alt="buffalo plage">
             </div>
@@ -243,9 +242,7 @@ title: Carole Nogueira Comportementaliste Équin
             <div class="numbertext">5 / 10</div>
             </div>
           </div>
-        </figure>
 
-        <figure>
           <div class="Slides">
             <div class="view">
             <img src="images/ballon-jeu-chevaux-carole-nogueira.jpg" class="image d-block w-100" alt="jeu de ballon avec deux chevaux">
@@ -262,15 +259,11 @@ title: Carole Nogueira Comportementaliste Équin
             <div class="numbertext">6 / 10</div>
             </div>
           </div>
-        </figure>
 
-        <figure>
           <div class="Slides">
-
             <div class="view">
             <img src="images/lien-nueva-carole-nogueira.jpg" class="image d-block w-100" alt="cheval apprend en douceur">
             </div>
-
             <div class="figcaption scrollable">
               <h3>Éducation</h3>
               <p>Le seul lien efficace sera celui que vous tisserez entre vous et votre cheval
@@ -280,15 +273,11 @@ title: Carole Nogueira Comportementaliste Équin
             <div class="numbertext">7 / 10</div>
             </div>
           </div>
-        </figure>
 
-        <figure>
           <div class="Slides">
-
             <div class="view">
             <img src="images/monter-a-cru-carole-nogueira.jpg" class="image d-block w-100" alt="monter le cheval à cru">
             </div>
-
             <div class="figcaption scrollable">
               <h3>Le respect du cheval c’est la fondation de la Liberté (Gruss)</h3>
               <p>L’évolution du filet au licol à la cordelette.
@@ -297,15 +286,11 @@ title: Carole Nogueira Comportementaliste Équin
             <div class="numbertext">8 / 10</div>
             </div>
           </div>
-        </figure>
 
-        <figure>
           <div class="Slides">
-
             <div class="view">
             <img src="images/van-carole-nogueira.jpg" class="image d-block w-100" alt="cheval monte dans le van">
             </div>
-
             <div class="figcaption scrollable">
               <h3>Demander souvent, se contenter de peu et récompenser beaucoup !</h3>
               <p> Le clicker va permettre de changer l’émotion du cheval.
@@ -316,15 +301,11 @@ title: Carole Nogueira Comportementaliste Équin
             <div class="numbertext">9 / 10</div>
             </div>
           </div>
-        </figure>
 
-        <figure>
           <div class="Slides">
-
             <div class="view">
             <img src="images/energetique-nueva-carole-nogueira.jpg" class="image d-block w-100" alt="cheval monte dans le van">
             </div>
-
             <div class="figcaption scrollable">
               <h3>Soin énergétique</h3>
               <p>Il va permettre d’évacuer les énergies en les débloquant afin de faire circuler librement l’énergie
@@ -335,33 +316,40 @@ title: Carole Nogueira Comportementaliste Équin
             <div class="numbertext">10 / 10</div>
             </div>
           </div>
-        </figure>
 
       </div>
 
-      <!-- Next/previous controls -->
-      <a class="arrow arrow-prev" onclick="plusSlides(-1)"></a>
-      <a class="arrow arrow-next" onclick="plusSlides(1)"></a>
+      <!-- Indicators -->
+      <ol class="portfolio-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="dot active" onclick="currentSlide(1)"></li>
+        <li data-target="#myCarousel" data-slide-to="1" class="dot" onclick="currentSlide(2)"></li>
+        <li data-target="#myCarousel" data-slide-to="2" class="dot" onclick="currentSlide(3)"></li>
+        <li data-target="#myCarousel" data-slide-to="3" class="dot" onclick="currentSlide(4)"></li>
+        <li data-target="#myCarousel" data-slide-to="4" class="dot" onclick="currentSlide(5)"></li>
+        <li data-target="#myCarousel" data-slide-to="5" class="dot" onclick="currentSlide(6)"></li>
+        <li data-target="#myCarousel" data-slide-to="6" class="dot" onclick="currentSlide(7)"></li>
+        <li data-target="#myCarousel" data-slide-to="7" class="dot" onclick="currentSlide(8)"></li>
+        <li data-target="#myCarousel" data-slide-to="8" class="dot" onclick="currentSlide(9)"></li>
+        <li data-target="#myCarousel" data-slide-to="9" class="dot" onclick="currentSlide(10)"></li>
+      </ol>
+      <!--/.Indicators-->
 
-      <!-- Caption container
-      <div class="caption-container">
-        <p id="caption"></p> -->
     </div>
   </div>
 </div>
 
-<div class="portfolio-s-screen sneak">
+<div id="myCarousel" class="portfolio-s-screen sneak" data-ride="carousel">
   <!--Controls-->
   <div class="controls-top">
-    <a class="btn-chevron" onclick="plusSneaks(-1)"><img src="images/left_chevron_white.png" alt="left chevron white"></a>
-    <a class="btn-chevron" onclick="plusSneaks(1)"><img src="images/right_chevron_white.png" alt="right chevron white"></a>
+    <a class="btn-chevron" onclick="plusSneak(-1)"><img src="images/left_chevron_white.png" alt="left chevron white"></a>
+    <a class="btn-chevron" onclick="plusSneak(1)"><img src="images/right_chevron_white.png" alt="right chevron white"></a>
   </div>
   <!--/.Controls-->
 
   <!--Slides-->
-  <div id="slide-show" class="portfolio-s-screen-container sneak d-flex" role="listbox">
+  <div class="portfolio-s-screen-container sneak d-flex" role="listbox">
 
-      <figure>
+
           <div class="slide-s-screen">
             <div class="view-s-screen">
               <img src="images/chevaux-pre-carole-nogueira.jpg" class="image-s-screen" alt="chevaux au pré">
@@ -380,10 +368,9 @@ title: Carole Nogueira Comportementaliste Équin
             <div class="numbertext">1 / 10</div>
             </div>
           </div>
-      </figure>
 
-        <figure>
-          <div class="slide-s-screen sneak">
+
+          <div class="slide-s-screen">
               <div class="view-s-screen">
                 <img src="images/bache-buffalo-carole-nogueira.jpg" class="image-s-screen" alt="exercice de la bâche">
               </div>
@@ -396,11 +383,8 @@ title: Carole Nogueira Comportementaliste Équin
               <div class="numbertext">2 / 10</div>
               </div>
           </div>
-        </figure>
 
-        <figure>
           <div class="slide-s-screen">
-
               <div class="view-s-screen">
                 <img src="images/cible-etzan-carole-nogueira.jpg" class="image-s-screen" alt="cheval travaille à la cible">
               </div>
@@ -414,11 +398,8 @@ title: Carole Nogueira Comportementaliste Équin
               <div class="numbertext">3 / 10</div>
               </div>
           </div>
-        </figure>
 
-        <figure>
           <div class="slide-s-screen">
-
             <div class="view-s-screen">
               <img src="images/toucher-poubelle-carole-nogueira.jpg" class="image-s-screen" alt="cheval touche la poubelle">
             </div>
@@ -436,11 +417,8 @@ title: Carole Nogueira Comportementaliste Équin
             <div class="numbertext">4 / 10</div>
             </div>
           </div>
-        </figure>
 
-        <figure>
           <div class="slide-s-screen">
-
             <div class="view-s-screen">
               <img src="images/connexion-etzan-carole-nogueira.jpg" class="image-s-screen" alt="buffalo plage">
             </div>
@@ -455,14 +433,11 @@ title: Carole Nogueira Comportementaliste Équin
             <div class="numbertext">5 / 10</div>
             </div>
           </div>
-        </figure>
 
-        <figure>
           <div class="slide-s-screen">
             <div class="view-s-screen">
             <img src="images/ballon-jeu-chevaux-carole-nogueira.jpg" class="image-s-screen" alt="jeu de ballon avec deux chevaux">
             </div>
-
             <div class="figcaption-s-screen scrollable">
               <h3>Apprendre en s'amusant</h3>
               <p>Mettre du « fun » pour enrichir sa vie.
@@ -474,15 +449,11 @@ title: Carole Nogueira Comportementaliste Équin
             <div class="numbertext">6 / 10</div>
             </div>
           </div>
-        </figure>
 
-        <figure>
           <div class="slide-s-screen">
-
             <div class="view-s-screen">
             <img src="images/lien-nueva-carole-nogueira.jpg" class="image-s-screen" alt="cheval apprend en douceur">
             </div>
-
             <div class="figcaption-s-screen scrollable">
               <h3>Éducation</h3>
               <p>Le seul lien efficace sera celui que vous tisserez entre vous et votre cheval
@@ -492,15 +463,11 @@ title: Carole Nogueira Comportementaliste Équin
             <div class="numbertext">7 / 10</div>
             </div>
           </div>
-        </figure>
 
-        <figure>
           <div class="slide-s-screen">
-
             <div class="view-s-screen">
             <img src="images/monter-a-cru-carole-nogueira.jpg" class="image-s-screen" alt="monter le cheval à cru">
             </div>
-
             <div class="figcaption-s-screen scrollable">
               <h3>Le respect du cheval c’est la fondation de la Liberté (Gruss)</h3>
               <p>L’évolution du filet au licol à la cordelette.
@@ -509,15 +476,11 @@ title: Carole Nogueira Comportementaliste Équin
             <div class="numbertext">8 / 10</div>
             </div>
           </div>
-        </figure>
 
-        <figure>
           <div class="slide-s-screen">
-
             <div class="view-s-screen">
             <img src="images/van-carole-nogueira.jpg" class="image-s-screen" alt="cheval monte dans le van">
             </div>
-
             <div class="figcaption-s-screen scrollable">
               <h3>Demander souvent, se contenter de peu et récompenser beaucoup !</h3>
               <p> Le clicker va permettre de changer l’émotion du cheval.
@@ -528,15 +491,11 @@ title: Carole Nogueira Comportementaliste Équin
             <div class="numbertext">9 / 10</div>
             </div>
           </div>
-        </figure>
 
-        <figure>
           <div class="slide-s-screen">
-
             <div class="view-s-screen">
             <img src="images/energetique-nueva-carole-nogueira.jpg" class="image-s-screen" alt="cheval monte dans le van">
             </div>
-
             <div class="figcaption-s-screen scrollable">
               <h3>Soin énergétique</h3>
               <p>Il va permettre d’évacuer les énergies en les débloquant afin de faire circuler librement l’énergie
@@ -547,24 +506,25 @@ title: Carole Nogueira Comportementaliste Équin
             <div class="numbertext">10 / 10</div>
             </div>
           </div>
-        </figure>
+
   </div>
   <!--Slides-->
 
   <!-- Indicators -->
   <ol class="portfolio-indicators">
-    <li data-target="#portfolio-slide" data-slide-to="0" class="dot active" onclick="currentSneak(1)"></li>
-    <li data-target="#portfolio-slide" data-slide-to="1" class="dot" onclick="currentSneak(2)"></li>
-    <li data-target="#portfolio-slide" data-slide-to="2" class="dot" onclick="currentSneak(3)"></li>
-    <li data-target="#portfolio-slide" data-slide-to="3" class="dot" onclick="currentSneak(4)"></li>
-    <li data-target="#portfolio-slide" data-slide-to="4" class="dot" onclick="currentSneak(5)"></li>
-    <li data-target="#portfolio-slide" data-slide-to="5" class="dot" onclick="currentSneak(6)"></li>
-    <li data-target="#portfolio-slide" data-slide-to="6" class="dot" onclick="currentSneak(7)"></li>
-    <li data-target="#portfolio-slide" data-slide-to="7" class="dot" onclick="currentSneak(8)"></li>
-    <li data-target="#portfolio-slide" data-slide-to="6" class="dot" onclick="currentSneak(9)"></li>
-    <li data-target="#portfolio-slide" data-slide-to="7" class="dot" onclick="currentSneak(10)"></li>
+    <li data-target="#myCarousel" data-slide-to="0" class="bullet active" onclick="currentSneak(1)"></li>
+    <li data-target="#myCarousel" data-slide-to="1" class="bullet" onclick="currentSneak(2)"></li>
+    <li data-target="#myCarousel" data-slide-to="2" class="bullet" onclick="currentSneak(3)"></li>
+    <li data-target="#myCarousel" data-slide-to="3" class="bullet" onclick="currentSneak(4)"></li>
+    <li data-target="#myCarousel" data-slide-to="4" class="bullet" onclick="currentSneak(5)"></li>
+    <li data-target="#myCarousel" data-slide-to="5" class="bullet" onclick="currentSneak(6)"></li>
+    <li data-target="#myCarousel" data-slide-to="6" class="bullet" onclick="currentSneak(7)"></li>
+    <li data-target="#myCarousel" data-slide-to="7" class="bullet" onclick="currentSneak(8)"></li>
+    <li data-target="#myCarousel" data-slide-to="8" class="bullet" onclick="currentSneak(9)"></li>
+    <li data-target="#myCarousel" data-slide-to="9" class="bullet" onclick="currentSneak(10)"></li>
   </ol>
   <!--/.Indicators-->
+
 
 </div>
 
