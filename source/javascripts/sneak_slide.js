@@ -1,24 +1,23 @@
-var sneakIndex = 1;
-showSneaks(sneakIndex);
+/*var sneakIndex = 1;
+showSneaks(sneakIndex); */
 
 // Next/previous controls
-function plusSneak(n) {
+/*function plusSneak(n) {
   /*n = n || 1 */
-  showSneaks(sneakIndex += n);
+ /*showSneaks(sneakIndex += n);
 }
 
 // Thumbnail image controls
-function currentSneak(n) {
+/*  function currentSneak(n) {
   showSneaks(sneakIndex = n);
-}
+}*/
 
-var activeTimer
-function showSneaks(n) {
+
+/*function showSneaks(n) {
   var i;
   var sneaks = document.getElementsByClassName("slide-s-screen");
   var bullets = document.getElementsByClassName("bullet");
-  if (activeTimer) window.clearTimeout(activeTimer)
-  if (n > sneaks.length) {
+  /*if (n > sneaks.length) {
     sneakIndex = 1
   }
   if (n < 1) {
@@ -34,38 +33,14 @@ function showSneaks(n) {
   }
   sneaks[sneakIndex-1].style.display = "flex";
   bullets[sneakIndex-1].className += " active";
-  /*activeTimer = setTimeout(showSneaks, 4000); */// Change image every 4 seconds
-}
+}*/
 
-setInterval(showSneaks, 4000);
+
+
+/*setInterval(showSlides, 4000);*/
 
 /*setInterval(function(){
     plusSneak(0);
 }, 4000);*/
 
-/*$(document).ready(function(){
-  // Activate Carousel
-  $("#myCarousel").carousel({interval: 1500});
-
-  // Enable Carousel Indicators
-  $(".item1").click(function(){
-    $("#myCarousel").carousel(0);
-  });
-  $(".item2").click(function(){
-    $("#myCarousel").carousel(1);
-  });
-  $(".item3").click(function(){
-    $("#myCarousel").carousel(2);
-  });
-  $(".item4").click(function(){
-    $("#myCarousel").carousel(3);
-  });
-
-  // Enable Carousel Controls
-  $(".left").click(function(){
-    $("#myCarousel").carousel("prev");
-  });
-  $(".right").click(function(){
-    $("#myCarousel").carousel("next");
-  });
-});*/
+/*setInterval(function(){ alert("Hello"); }, 3000);*/
