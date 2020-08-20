@@ -35,6 +35,24 @@
     white-space: normal;
     background: white;
     border-radius: 6px;
+
+    /* Fading animation */
+    /*&.fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 0.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }*/
   }
 
   .view-s-screen {
