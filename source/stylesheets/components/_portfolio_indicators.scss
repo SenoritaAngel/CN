@@ -14,7 +14,7 @@
 }
 
 /* The dots/bullets/indicators */
-.dot, {
+.dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -52,8 +52,8 @@
     margin-top: 3%;
     margin-bottom: 5%;
   }
-/* The dots/bullets/indicators */
-  .bullet {
+  /* The dots/bullets/indicators */
+  .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -70,7 +70,7 @@
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 
-    &.active, .bullet:hover {
+    &.active, .dot:hover {
       background-color: white;
       opacity: 1;
       height: 20px;
