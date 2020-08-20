@@ -3,6 +3,7 @@ showSneaks(sneakIndex);
 
 // Next/previous controls
 function plusSneak(n) {
+  /*n = n || 1 */
   showSneaks(sneakIndex += n);
 }
 
@@ -11,21 +12,36 @@ function currentSneak(n) {
   showSneaks(sneakIndex = n);
 }
 
+var activeTimer
 function showSneaks(n) {
   var i;
   var sneaks = document.getElementsByClassName("slide-s-screen");
   var bullets = document.getElementsByClassName("bullet");
-  if (n > sneaks.length) {sneakIndex = 1}
-  if (n < 1) {sneakIndex = sneaks.length}
+  if (activeTimer) window.clearTimeout(activeTimer)
+  if (n > sneaks.length) {
+    sneakIndex = 1
+  }
+  if (n < 1) {
+    sneakIndex = sneaks.length
+  }
   for (i = 0; i < sneaks.length; i++) {
       sneaks[i].style.display = "none";
   }
+  sneakIndex++;
+  if (sneakIndex > sneaks.length) {sneakIndex = 1}
   for (i = 0; i < bullets.length; i++) {
       bullets[i].className = bullets[i].className.replace(" active", "");
   }
   sneaks[sneakIndex-1].style.display = "flex";
   bullets[sneakIndex-1].className += " active";
+  /*activeTimer = setTimeout(showSneaks, 4000); */// Change image every 4 seconds
 }
+
+setInterval(showSneaks, 4000);
+
+/*setInterval(function(){
+    plusSneak(0);
+}, 4000);*/
 
 /*$(document).ready(function(){
   // Activate Carousel
