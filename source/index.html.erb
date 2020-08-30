@@ -531,51 +531,65 @@ title: Carole Nogueira Comportementaliste Équin
 <div class="contact" style="background-image: url(images/horse_pasture_ocean.jpg);">
   <div class="contact-container">
     <div class="contact-title">
-      <h2>CONTACTEZ-MOI</h2>
-      <p>If you have any questions, please feel free to contact us by phone, email or by completing the enquiry form below.
+      <h1>CONTACTEZ-MOI</h1>
+      <p>Si vous avez des questions ou souhaitez des informations supplémentaires veuillez me contacter via le formulaire ci-dessous, par téléphone ou e-mail.
       </p>
     </div>
 
     <div class="form-info-container">
 
-      <form action="https://formspree.io/mnqjyobo" method="POST" class="form">
+      <form action="https://formspree.io/mnqjyobo" method="POST" id="contact-form" class="form">
         <div class="form-guest">
-          <!-- <label for="Firstname">Firstname</label> -->
-          <input class="form-control-guest" type="text" placeholder="Votre prénom" id="firstname">
+          <!-- <label for="Firstname" data-error="wrong" data-success="right">Firstname</label> -->
+          <input class="form-control-guest bottom" type="text" placeholder="Votre prénom" id="firstname" name="firstname" required>
         </div>
 
         <div class="form-guest">
-          <!-- <label for="Lastname"></label> -->
-          <input class="form-control-guest" type="text" placeholder="Votre nom" id="lastname">
+          <!-- <label for="Lastname" data-error="wrong" data-success="right"></label> -->
+          <input class="form-control-guest bottom" type="text" placeholder="Votre nom" id="lastname" name="lastname" required>
         </div>
 
         <div class="form-guest">
-          <!-- <label for="exampleInputEmail1"></label> -->
-          <input type="email" name="_replyto" class="form-control-guest" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Votre email">
-          <p id="emailHelp" class="form-text-mention">We'll never share your email with anyone else.</p>
+          <!-- <label for="exampleInputEmail1" data-error="wrong" data-success="right"></label> -->
+          <input type="email" name="_replyto" class="form-control-guest validate" id="Email" aria-describedby="emailHelp" placeholder="Votre email" required>
+          <div id="emailHelp" class="form-text-mention">Je ne communiquerai jamais votre e-mail.</div>
         </div>
+
+        <select class="form-control-guest bottom" id="subject" searchable="Search here..">
+          <option value="" disabled selected>Choisissez un sujet</option>
+          <option value="1">Comportementaliste équin</option>
+          <option value="2">Soin énergetique</option>
+          <option value="3">Clicker</option>
+          <option value="4">Atelier</option>
+          <option value="5">Autre demande</option>
+        </select>
 
         <div class="form-guest">
-          <!-- <label for="textarea"></label> -->
-          <textarea class="form-control-message" type="text" name="message" placeholder="Your message here" id="textarea" rows="5"></textarea>
+          <!-- <label for="textarea" data-error="wrong" data-success="right"></label> -->
+          <textarea class="form-control-guest bottom" type="text" name="message" placeholder="Ecrivez votre message ici" id="textarea" rows="5" required></textarea>
         </div>
 
-        <button type="submit" class="btn btn-form-contact">ENVOYER</button>
+        <div class="form-validate d-flex ">
+          <div class="status"></div>
+          <button type="submit" class="btn btn-form-contact" onclick="validateForm();">ENVOYER</button>
+
+        </div>
+
 
       </form>
 
       <div class="info-container">
         <div class="info-map">
-          <i class="icon StreetName"></i>
-          <p>Horse StreetName
-            64500 Zip Town
-          </p>
+          <img src="images/cn_phone_white_picto.png" alt="picto téléphone mobile" class="picto">
+          <p>+33 6 50 07 63 04</p>
           <br>
-          <i class="icon mobile"></i>
-          <p>+33 6 60 97 33 55</p>
+          <img src="images/cn_location_white_picto.png" alt="picto localisation carte" class="picto">
+          <p>Route de la Corniche<br> 64122 Urrugne</p>
         </div>
 
+        <!--mapbox-->
         <img id="map" src="images/map_erromardie.png" alt="localisation">
+
       </div>
     </div>
   </div>
