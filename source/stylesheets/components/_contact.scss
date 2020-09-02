@@ -154,31 +154,6 @@
   box-shadow: 0 5px 11px 0 rgba(81,77,36,0.5),0 4px 15px 0 rgba(0,0,0,0.15);
 }
 
-#map {
-  overflow: hidden;
-  max-height: 45%;
-  background-size: cover;
-  background-position: center;
-  border-radius: 4px;
-  box-shadow: 2px 2px 15px rgba(65, 72, 35, 0.8);
-  max-width: 100%;
-}
-
-.map-container-6 {
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
-}
-
-.map-container-6 iframe{
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
-}
-
 @media (max-width: 768px) {
   .contact {
     background-size: 360%;
@@ -231,15 +206,11 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
+    height: 30%;
     padding-right: 0;
     padding-bottom: 0;
     margin-top: 5%;
     margin-bottom: 2%;
-  }
-
-  #map {
-    max-height: 140px; /*img en paysage*/
-    max-width: 100%;
   }
 }
 
@@ -340,9 +311,5 @@
 
   .picto {
     max-height: 28px;
-  }
-
-  #map {
-    display: none;
   }
 }
