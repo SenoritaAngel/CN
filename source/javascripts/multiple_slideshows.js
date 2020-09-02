@@ -3,6 +3,7 @@
 /* Class the members of each slideshow group with different CSS classes */
 var slideIndex = [1,1];
 var slideId = ["Slides", "slide-s-screen"]
+// var indicators = ["dot", "bullet"]
 showSlides(1, 0);
 showSlides(1, 1);
 
