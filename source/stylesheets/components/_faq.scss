@@ -1,46 +1,44 @@
-.faq-container {
+.faq {
   overflow: hidden;
-  height: 30vh;
+  // height: 30vh;
   background: rgba(98,17,11,1); /* red w/ opacity */
-  display: flex;
-  // justify-content: center;
-  // align-items: center;
 }
-
-.cards-faq {
-  // padding-left: 4%;
-  // padding-right: 4%;
-  // max-width: 900px;
-  max-width: 600px;
+.faq-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  // flex-wrap: wrap;
-  margin: auto 5%;
+  margin: 3%;
 }
 
-.card-body {
-  color: white;
-  position: relative;
+.faq-body {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-around;
+  max-width: 60%;
+  // margin: auto 5%;
+  margin-right: 5%;
+}
+
+.faq-body {
+  // position: relative;
   h1, h2 {
   font-family: 'rawengulklight';
+  color: white;
   }
 
   h1 {
-  // font-weight: 'rawengulklight';
-  font-size: 80px;
-  opacity: .5;
+  font-size: 72px;
   letter-spacing: 8px;
-  text-align: center;
-  line-height: 0.8;
+  text-align: right;
+  line-height: 0.9;
   margin: 0rem;
   }
 
   h2 {
   font-size: 52px;
   letter-spacing: 7px;
-  text-align: center;
+  text-align: left;
   line-height: 1.1;
   }
 
@@ -62,4 +60,15 @@
   line-height: 1.4;
   opacity: .7;
   }
+}
+
+.faq-accordion {
+  // max-width: 300px;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-start;
+  // align-items: center;
+  // flex-wrap: wrap;
+  // margin: auto 5%;
+  margin-right: 5%;
 }
