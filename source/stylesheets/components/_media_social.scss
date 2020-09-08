@@ -28,10 +28,10 @@
   // width: 45%;
   // padding-left: 3%;
   flex: 0 auto;
-  h2 {
+  h3 {
   font-family: 'rawengulklight';
   color: white;
-  font-size: 64px;
+  font-size: 56px;
   letter-spacing: 7px;
   text-align: left;
   line-height: 1;
@@ -43,12 +43,52 @@
 
 .social-link {
   padding-right: 2%;
-  // margin-right: 5%;
-  img {
-    // background-color: white;
-    // border-radius: 50%;
-    // -webkit-box-shadow: 0 5px 11px 0 rgba(81,77,36,0.5),0 4px 15px 0 rgba(0,0,0,0.15);
-    // box-shadow: 0 5px 11px 0 rgba(81,77,36,0.5),0 4px 15px 0 rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+  .media-container {
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    align-items: flex-start;
+    margin: 6% 8%;
   }
 
+  .media-body h3 {
+    margin-top: 3%;
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 576px) {
+  #horseVideo {
+    width: 350px;
+    height: 200px;
+  }
+  .media-body h3 {
+    margin-top: 3%;
+    font-size: 36px;
+    letter-spacing: 3px;
+    text-align: left;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 400px) {
+  #horseVideo {
+    width: 306px;
+    height: 174px;
+  }
+  .media-body {
+  // flex-direction: row;
+  // flex: 0 auto;
+    h3 {
+      margin-top: 3%;
+      font-size: 28px;
+      letter-spacing: 3px;
+      text-align: left;
+      line-height: 1;
+    }
+  }
 }
