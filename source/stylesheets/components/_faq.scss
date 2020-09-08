@@ -1,7 +1,13 @@
 .faq {
   overflow: hidden;
   // height: 30vh;
-  background: rgba(98,17,11,1); /* red w/ opacity */
+  background-size: cover;
+  background-size: 100%;
+  background-position-y: 70%;
+  // background-position: center;
+  background-attachment: fixed;
+  // background-repeat: no-repeat;
+  // background: rgba(98,17,11,1); /* red w/ opacity */
 }
 .faq-container {
   display: flex;
