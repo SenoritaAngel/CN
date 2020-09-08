@@ -1,0 +1,38 @@
+.senorita-angel-container {
+  height: 7vh;
+  display: flex;
+  // flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  // background-color: white;
+  background: rgba(250,250,250,.8); /* red w/ opacity */
+  // opacity: 0.8;
+  // background: rgba(98,17,11,.8); /* red w/ opacity */
+}
+
+.body p {
+  font-family: 'rawengulkbold';
+  font-size: 16px;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  margin: 0;
+  color: rgba(98,17,11,1);
+  // opacity: .8;
+  // text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+@media (max-width: 768px) {
+  .body p {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    opacity: .8;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+  }
+}
+
+@media (max-width: 414px) {
+  .body p {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+  }
+}
