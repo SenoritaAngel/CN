@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: 54% 44%;
   background-attachment: fixed;
-  height: 100vh;
+  height: 93vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -172,10 +172,11 @@
   }
 
   .contact-container {
-    // margin: auto 8%;
+    height: 95vh;
     margin-top: 6%;
     margin-left: 8%;
     margin-right: 8%;
+    overflow: auto;
   }
 
   .contact-title {
@@ -324,6 +325,7 @@
       font-size: 18px;
       letter-spacing: 1px;
       margin-left: 5%;
+      text-align: left
     }
   }
 
@@ -336,12 +338,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 2%;
     a {
       display: flex;
     }
   }
 
   .picto {
-    max-height: 28px;
+    height: 28px;
   }
 }
