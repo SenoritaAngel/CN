@@ -1,5 +1,5 @@
 .carole-nogueira-footer {
-  height: 7vh;
+  height: 10vh;
   // background: rgba(250,250,250,.8); /* white w/ opacity */
   background: rgba(98,17,11,1); /* red w/ opacity */
 }
@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30%;
+  padding: 0 20%;
   // background: rgba(250,250,250,.8); /* white w/ opacity */
   // background: rgba(98,17,11,1); /* red w/ opacity */
 }
@@ -21,7 +21,6 @@
   width: 240px;
 
   img {
-    height: 34px;
     opacity: .8;
   }
 
@@ -36,15 +35,18 @@
   }
 }
 
+.icon {
+  height: 20px;
+}
+
 
 .right {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 222px;
+  width: 240px;
 
   img {
-    height: 24px;
     opacity: .8;
   }
 
@@ -58,6 +60,14 @@
     color: rgba(250,250,250,.8);
     // text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
   }
+}
+
+#heart-icon {
+  height: 32px;
+}
+
+#cn-icon {
+  height: 40px;
 }
 
 @media (max-width: 768px) {
