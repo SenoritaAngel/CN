@@ -4,14 +4,14 @@
   background-repeat: no-repeat;
   background-position: 54% 44%;
   background-attachment: fixed;
-  height: 93vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .contact-container {
-  height: 93vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   margin-top: 4%;
@@ -159,7 +159,7 @@
 }
 
 .picto {
-  max-height: 36px;
+  height: 36px;
   border-radius: 30%;
   -webkit-box-shadow: 0 5px 11px 0 rgba(81,77,36,0.5),0 4px 15px 0 rgba(0,0,0,0.15);
   box-shadow: 0 5px 11px 0 rgba(81,77,36,0.5),0 4px 15px 0 rgba(0,0,0,0.15);
