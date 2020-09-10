@@ -332,8 +332,6 @@ title: Carole Nogueira Comportementaliste Équin
       <!-- Modal Content (The Image) -->
       <div class="modal-cards">
 
-
-
             <div class="Slides">
               <div class="view">
                 <img src="images/chevaux-pre-carole-nogueira.jpg" class="image d-block w-100" alt="chevaux au pré">
@@ -754,32 +752,32 @@ title: Carole Nogueira Comportementaliste Équin
       <form action="https://formspree.io/mnqjyobo" method="POST" id="contact-form" class="form">
         <div class="form-guest">
           <!-- <label for="Firstname" data-error="wrong" data-success="right">Firstname</label> -->
-          <input class="form-control-guest bottom" type="text" placeholder="Votre prénom" id="firstname" name="firstname" required>
+          <input class="form-control-guest bottom" type="text" placeholder="Votre prénom" id="firstname" name="firstname" required="">
         </div>
 
         <div class="form-guest">
           <!-- <label for="Lastname" data-error="wrong" data-success="right"></label> -->
-          <input class="form-control-guest bottom" type="text" placeholder="Votre nom" id="lastname" name="lastname" required>
+          <input class="form-control-guest bottom" type="text" placeholder="Votre nom" id="lastname" name="lastname" required="">
         </div>
 
         <div class="form-guest">
           <!-- <label for="exampleInputEmail1" data-error="wrong" data-success="right"></label> -->
-          <input type="email" name="_replyto" class="form-control-guest validate" id="Email" aria-describedby="emailHelp" placeholder="Votre email" required>
+          <input type="email" name="_replyto" class="form-control-guest validate" id="Email" aria-describedby="emailHelp" placeholder="Votre email" required="">
           <div id="emailHelp" class="form-text-mention">Je ne communiquerai jamais votre e-mail.</div>
         </div>
 
-        <select class="form-control-guest bottom" id="subject" searchable="Search here..">
+        <select class="form-control-guest bottom" id="subject department" searchable="Search here.." name="department" required="">
           <option value="" disabled selected>Choisissez un sujet</option>
-          <option value="1">Communication animale</option>
-          <option value="2">Soin énergetique</option>
-          <option value="3">Clicker</option>
-          <option value="4">Atelier</option>
-          <option value="5">Autre demande</option>
+          <option value="Communication animale">Communication animale</option>
+          <option value="Soin énergetique">Soin énergetique</option>
+          <option value="Clicker">Clicker</option>
+          <option value="Atelier">Atelier</option>
+          <option value="Autre demande">Autre demande</option>
         </select>
 
         <div class="form-guest">
           <!-- <label for="textarea" data-error="wrong" data-success="right"></label> -->
-          <textarea class="form-control-guest bottom" type="text" name="message" placeholder="Ecrivez votre message ici" id="textarea" rows="4" required></textarea>
+          <textarea class="form-control-guest bottom" type="text" name="message" placeholder="Ecrivez votre message ici" id="textarea" rows="4" required=""></textarea>
         </div>
 
         <div class="form-validate">
@@ -827,13 +825,17 @@ title: Carole Nogueira Comportementaliste Équin
     <div class="senorita-angel-container">
       <div class="left">
         <p>Carole Nogueira </p>
-          <img src="images/carole_nogueira_logo_white_28.png" alt="logo Comportementaliste équin blanc">
+          <img src="images/carole_nogueira_logo_white_28.png" alt="logo Comportementaliste équin blanc" class="picto">
          <p> 2020</p>
       </div>
 
         <a class="right" href="https://senoritaangel.github.io/" target="_blank" role="button">
-          <img src="images/heart_code_28.png" alt="code with heart white">
-          <p> by Señorita Angel</p>
+          <img src="images/chevron_left_white_28.png" alt="chevron left white" class="picto">
+          <p> my </p>
+          <img src="images/heart_code_white_28.png" alt="heart white" id="heart">
+          <p> goes boom </p>
+          <img src="images/chevron_right_white_28.png" alt="chevron right white" class="picto">
+          <p>by Señorita Angel</p>
         </a>
 
     </div>
