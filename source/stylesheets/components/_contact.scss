@@ -167,12 +167,13 @@
 
 @media (max-width: 768px) {
   .contact {
+    height: 93vh;
     background-size: 360%;
     background-position: 58% 50%;
   }
 
   .contact-container {
-    height: 95vh;
+    // height: 95vh;
     margin-top: 6%;
     margin-left: 8%;
     margin-right: 8%;
