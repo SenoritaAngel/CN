@@ -92,15 +92,19 @@
   margin-bottom: 1.25rem;
   margin-right: 1.25rem;
   position: relative;
-  max-height: 170px;
+  max-height: 152px;
   border-radius: 4px;
   flex: 1 30%;
   overflow: hidden;
-  img {
+
+/*object-fit: cover;*/
+  .clicker {
     display: block;
-    // position: absolute;
-    height: 145%;
-    top: -17%;
+    height: 150%;
+    object-fit: cover;
+    -webkit-transform: translate(0,-10%);
+    -ms-transform: translate(0,-10%);
+    transform: translate(0,-10%);
   }
 }
 
@@ -157,17 +161,6 @@
   #card-view {
     margin-top: 0;
     margin-right: 0;
-    // margin-bottom: 1.25rem;
-    position: relative;
-    max-height: 170px;
-    border-radius: 4px;
-    overflow: hidden;
-    img {
-      display: block;
-      position: initial;
-      height: 145%;
-      // top: -17%;
-    }
   }
 
   .card-body {
