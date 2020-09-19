@@ -27,54 +27,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // max-width: 60%;
-  // margin: auto 5%;
-  // margin-right: 5%;
-
-  h1, h2, h3 {
-    font-family: 'rawengulklight';
-    color: white;
-  }
-
-  h1 {
-    font-size: 72px;
-    letter-spacing: 8px;
-    text-align: right;
-    line-height: 0.9;
-    margin: 0rem;
-  }
-
-  h2 {
-    font-size: 52px;
-    letter-spacing: 7px;
-    text-align: left;
-    line-height: 1.1;
-  }
-
+  // opacity: .7;
   h3 {
-    font-family: 'rawengulkregular';
+    color: white;
+    font-family: $my-font;
     font-size: 24px;
-    // opacity: .7;
     letter-spacing: 7px;
     text-align: center;
     line-height: 1.1;
     margin-top: 3%;
     margin-bottom: 1%;
   }
-
-  p {
-    font-family: 'rawengulkregular';
-    font-size: 20px;
-    text-align: justify;
-    line-height: 1.4;
-    opacity: .7;
-  }
 }
 
 .faq-accordion {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
   width: 500px;
 }
 
@@ -83,8 +49,6 @@
   flex-direction: column;
   justify-content: center;
   width: 500px;
-
-
 }
 
 .card-header a {
@@ -92,6 +56,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
   h5 {
     font-family: 'rawengulkbold';
     font-size: 20px;
@@ -104,188 +69,214 @@
   }
 }
 
-.chevron-down {
+.chevron-down, .chevron-up {
   max-width: 24px;
 }
 
-.card-view {
-    display: flex;
-    // flex-direction: row;
-    justify-content: space-between;
-    // align-items: flex-start;
-}
+#card-body-view {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  // flex: 0 65%;
+  padding-left: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-right: 1.25rem;
+  p {
+    font-family: $my-font;
+    font-size: 16px;
+    // text-align: justify;
+    line-height: 1.2;
+    opacity: .7;
+    margin: 0;
+  }
 
-#card-view {
-  margin-top: 1.25rem;
-  margin-right: 1.25rem;
-  position: relative;
-  max-height: 170px;
-  border-radius: 4px;
-  flex: 1 30%;
-  overflow: hidden;
-  img {
-    display: block;
-    position: absolute;
-    height: 145%;
-    top: -17%;
+  /*object-fit: cover;*/
+  .clicker {
+    // margin-top: 1.25rem;
+    // margin-bottom: 1.25rem;
+    margin-right: 1.25rem;
+    // position: relative;
+    height: 96px;
+    border-radius: 4px;
+    flex: 1 130%;
+    overflow: hidden;
+    // object-fit: cover;
+
+    img {
+      display: block;
+      height: 200%;
+      object-fit: cover;
+      -webkit-transform: translate(0,-30%);
+      -ms-transform: translate(0,-30%);
+      transform: translate(0,-30%);
+    }
   }
 }
 
 .card-body {
   flex: 0 65%;
-  // padding: 0;
-  // margin: 1.25rem;
   p {
-    font-family: 'rawengulkregular';
-    // font-weight: 200;
+    font-family: $my-font;
     font-size: 16px;
-    text-align: justify;
+    // text-align: justify;
     line-height: 1.2;
     opacity: .7;
     margin: 0;
+  }
+  a {
+    color: rgba(98,17,11,1);
+    text-decoration: none;
+  }
+  & a:hover {
+    font-family: 'rawengulkbold';
+    color: rgba(98,17,11,1);
   }
 }
 
 @media (max-width: 768px) {
     .faq {
-    // background-size: 100%;
     background-position-y: 113%;
-  }
-
-  .faq-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 3%;
   }
 
   .carole-nogueira-logo {
     height: 13.5rem;
-    padding-bottom: 1rem;
   }
 
   .faq-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    // max-width: 60%;
-    // margin: auto 5%;
-    // margin-right: 5%;
-
-    h1, h2, h3 {
-      font-family: 'rawengulklight';
-      color: white;
-    }
-
-    h1 {
-      font-size: 72px;
-      letter-spacing: 8px;
-      text-align: right;
-      line-height: 0.9;
-      margin: 0rem;
-    }
-
-    h2 {
-      font-size: 52px;
-      letter-spacing: 7px;
-      text-align: left;
-      line-height: 1.1;
-    }
-
     h3 {
-      font-family: 'rawengulkregular';
       font-size: 21px;
-      // opacity: .7;
       letter-spacing: 4px;
-      text-align: center;
-      line-height: 1.1;
-      margin-top: 3%;
-      margin-bottom: 1%;
-    }
-
-    p {
-      font-family: 'rawengulkregular';
-      font-size: 20px;
-      text-align: justify;
-      line-height: 1.4;
-      opacity: .7;
     }
   }
 
   .faq-accordion {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
     width: 370px;
   }
 
-  .card-faq {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 500px;
-
-
-  }
-
   .card-header a {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     h5 {
-      font-family: 'rawengulkbold';
       font-size: 17px;
-      color: rgba(98,17,11,1);
       letter-spacing: 1px;
-      // text-align: right;
-      line-height: 1.1;
-      margin-top: 1%;
-      margin-bottom: 1%;
     }
-  }
-
-  .chevron-down {
-    max-width: 24px;
   }
 
   .card-view {
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: space-between;
+      // display: flex;
+      flex-direction: column;
+      // justify-content: space-between;
       align-items: center;
   }
 
-  #card-view {
-    margin-top: 1.25rem;
-    margin-right: 0;
-    // margin-bottom: 1.25rem;
-    position: relative;
-    max-height: 170px;
-    border-radius: 4px;
-    // flex: 1 30%;
-    overflow: hidden;
-    img {
-      display: block;
-      position: initial;
-      height: 145%;
-      // top: -17%;
+  #card-body-view {
+    /*object-fit: cover;*/
+    .clicker {
+      height: 134px;
+      flex: 1 215%;
+      img {
+        // display: block;
+        height: 150%;
+        // object-fit: cover;
+        -webkit-transform: translate(-7%,-15%);
+        -ms-transform: translate(-7%,-15%);
+        transform: translate(-7%,-15%);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .faq {
+    background-size: 210%;
+    background-position-y: -26%;
+  }
+
+  .faq-container {
+    // display: flex;
+    flex-direction: column;
+    // justify-content: space-around;
+    // align-items: center;
+    margin: 7%;
+  }
+
+  .carole-nogueira-logo {
+    // height: 13.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .faq-body {
+    h3 {
+      font-size: 21px;
+      letter-spacing: 4px;
+      margin-bottom: 5%;
     }
   }
 
-  .card-body {
-    flex: 0 65%;
-    // padding: 0;
-    // margin: 1.25rem;
-    p {
-      font-family: 'rawengulkregular';
-      // font-weight: 200;
-      font-size: 16px;
-      text-align: justify;
-      line-height: 1.2;
-      opacity: .7;
-      margin: 0;
+  .faq-accordion {
+    width: 350px;
+  }
+
+  .card-header {
+    padding: 0.60rem 1rem;
+  }
+
+  .chevron-down, .chevron-up {
+    max-width: 20px;
+  }
+
+  .card-view {
+    // display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    align-items: center;
+  }
+
+  #card-body-view {
+    // flex-direction: column;
+    /*object-fit: cover;*/
+    .clicker {
+      height: 154px;
+      flex: 1 234%;
+      img {
+        // display: block;
+        height: 135%;
+        // object-fit: cover;
+        -webkit-transform: translate(-9%,-10%);
+        -ms-transform: translate(-9%,-10%);
+        transform: translate(-9%,-10%);
+      }
     }
+  }
 }
+
+@media only screen and (max-width: 400px) {
+  .faq {
+    background-size: 210%;
+    background-position-y: -26%;
+  }
+
+  .faq-container {
+    // display: flex;
+    flex-direction: column;
+    // justify-content: space-around;
+    // align-items: center;
+    margin: 7%;
+  }
+
+  .carole-nogueira-logo {
+    // height: 13.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .faq-body {
+    h3 {
+      font-size: 21px;
+      letter-spacing: 4px;
+      margin-bottom: 5%;
+    }
+  }
+
+  .faq-accordion {
+    width: 320px;
+  }
 }
